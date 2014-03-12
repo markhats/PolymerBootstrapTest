@@ -1,0 +1,9 @@
+name: PolymerBootstrapModal
+description: A sample Polymer application
+dependencies:
+  polymer: any
+  widget:
+    path: package_dev\widget.dart
+transformers:
+- polymer:
+    entry_points: web/polymerbootstrap.html

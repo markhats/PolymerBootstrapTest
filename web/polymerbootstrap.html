@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Bootstrap, from Twitter: accordion</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="packages/widget/components/modal_popover.html" rel="import">
+    <link href="hostedmodal.html" rel="import">
+    <link href="subclassedmodal.html" rel="import">
+    <link rel="stylesheet" href="modal_popover.css">
+  </head>
+  <body>
+    <!-- Button to trigger hosted modal -->
+    <a role="button" class="btn btn-primary" id="hostedModalOpenButton">Hosted Modal Widget Test</a>
+
+    <!-- Hosted Modal Widget -->
+    <modal-host-element id="hosted_modal_example">
+        <input type="text" placeholder="Name2">
+    </modal-host-element>
+
+    <!-- Button to trigger subclassed modal -->
+    <a role="button" class="btn btn-primary" id="subclassedModalOpenButton">Subclassed Modal Widget Test</a>
+
+    <!-- Subclassed Modal Widget -->
+    <modal-subclassed-element id="subclassed_modal_example">
+        <input type="text" placeholder="Name2">
+    </modal-subclassed-element>
+
+    <script src="bootstrap/js/jquery-2.0.3.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- Dart -->
+    <script type="application/dart" src="polymerbootstrap.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head><script src="packages/shadow_dom/shadow_dom.debug.js"></script>
+<script src="packages/custom_element/custom-elements.debug.js"></script>
+<script src="packages/browser/interop.js"></script>
+
+    <title>Bootstrap, from Twitter: accordion</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="modal_popover.css">
+  </head>
+  <body><polymer-element name="show-hide-widget" attributes="isShown">
+  <template if="{{isShown}}">
+    <style>
+      :host {
+        display: inline-block;
+      }
+
+      .wrapper.false {
+        display: none;
+      }
+    </style>
+    <div class="wrapper {{isShown}}">
+      <content></content>
+    </div>
+  </template>
+  
+</polymer-element>
+<polymer-element name="modal-popover-widget" extends="show-hide-widget">
+  <template>
+    <style>
+      :host .modal-popover {
+        overflow-y: hidden;
+        top: 48px;
+        left: auto;
+        min-width: 320px;
+        max-width: 320px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+
+      :host .modal-popover > .popover {
+        position: fixed;
+        top: auto;
+        left: auto;
+        display: block;
+        min-width: 320px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+    </style>
+    <div class="modal modal-popover">
+      <div class="popover bottom">
+        <div class="arrow"></div>
+          <content></content>
+      </div>
+    </div>
+  </template>
+  
+</polymer-element>
+<polymer-element name="modal-host-element">
+    <template>
+        <modal-popover-widget>
+            <input type="text" placeholder="Name1">
+            <content></content>
+            <input type="text" placeholder="Name3">
+        </modal-popover-widget>
+    </template>
+
+    
+</polymer-element><polymer-element name="modal-subclassed-element" extends="modal-popover-widget">
+    <template>
+        <shadow>
+            <input type="text" placeholder="Name1">
+            <content></content>
+            <input type="text" placeholder="Name3">
+        </shadow>
+    </template>
+
+    
+</polymer-element>
+    <!-- Button to trigger hosted modal -->
+    <a role="button" class="btn btn-primary" id="hostedModalOpenButton">Hosted Modal Widget Test</a>
+
+    <!-- Hosted Modal Widget -->
+    <modal-host-element id="hosted_modal_example">
+        <input type="text" placeholder="Name2">
+    </modal-host-element>
+
+    <!-- Button to trigger subclassed modal -->
+    <a role="button" class="btn btn-primary" id="subclassedModalOpenButton">Subclassed Modal Widget Test</a>
+
+    <!-- Subclassed Modal Widget -->
+    <modal-subclassed-element id="subclassed_modal_example">
+        <input type="text" placeholder="Name2">
+    </modal-subclassed-element>
+
+    <script src="bootstrap/js/jquery-2.0.3.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+    <!-- Dart -->
+    <script type="application/dart" src="polymerbootstrap.html_bootstrap.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  
+
+</body></html>

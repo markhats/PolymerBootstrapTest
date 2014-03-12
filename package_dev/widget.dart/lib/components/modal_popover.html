@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<link rel="import" href="show_hide.html">
+
+<polymer-element name="modal-popover-widget" extends="show-hide-widget">
+  <template>
+    <style>
+      :host .modal-popover {
+        overflow-y: hidden;
+        top: 48px;
+        left: auto;
+        min-width: 320px;
+        max-width: 320px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+
+      :host .modal-popover > .popover {
+        position: fixed;
+        top: auto;
+        left: auto;
+        display: block;
+        min-width: 320px;
+        padding: 0;
+        border: none;
+        border-radius: 8px;
+      }
+    </style>
+    <div class='modal modal-popover'>
+      <div class='popover bottom'>
+        <div class="arrow"></div>
+          <content></content>
+      </div>
+    </div>
+  </template>
+  <script type="application/dart" src='modal_popover.dart'></script>
+</polymer-element>

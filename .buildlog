@@ -1,0 +1,490 @@
+---
+build.dart --machine --changed=pubspec.yaml --changed=web\clickcounter.dart --changed=web\clickcounter.html --c...
+
+build.dart finished [12905 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Unexpected DOCTYPE. Ignored.","line":26,"charStart":579,"charEnd":594}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"html needs to be the first start tag.","line":27,"charStart":595,"charEnd":601}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Unexpected start tag (head). Expected end of file.","line":28,"charStart":604,"charEnd":610}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Unexpected start tag head. Ignored.","line":28,"charStart":604,"charEnd":610}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Unexpected end tag (head). Ignored.","line":33,"charStart":836,"charEnd":843}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Unexpected start tag (body).","line":34,"charStart":846,"charEnd":852}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"couldn't find imported asset \"bootstrap-elements.html\" in package \"PolymerBootstrap\".","line":31,"charStart":724,"charEnd":777}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Move HTML imports above your Dart script tag.","line":31,"charStart":724,"charEnd":777}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"definition for Polymer element with tag name \"bs-accordion-item\" not found.","line":36,"charStart":887,"charEnd":911}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"definition for Polymer element with tag name \"bs-accordion-item\" not found.","line":40,"charStart":1064,"charEnd":1083}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: couldn't find imported asset "bootstrap-elements.html" in package "PolymerBootstrap".}
+build.dart finished [1876 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"couldn't find imported asset \"web/bs-accordion.html\" in package \"PolymerBootstrap\".","line":5,"charStart":90,"charEnd":134}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"definition for Polymer element with tag name \"bs-accordion-item\" not found.","line":10,"charStart":244,"charEnd":268}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"definition for Polymer element with tag name \"bs-accordion-item\" not found.","line":14,"charStart":421,"charEnd":440}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":203,"charEnd":209}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: couldn't find imported asset "web/bs-accordion.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1372 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"web/bootstrap.html\" in package \"PolymerBootstrap\".","line":2,"charStart":51,"charEnd":92}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":203,"charEnd":209}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "web/bootstrap.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1400 ms]
+
+---
+build.dart --machine --changed=web\bootstrap\css\bootstrap-responsive.css --changed=web\bootstrap\css\bootstrap...
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"web/bootstrap.html\" in package \"PolymerBootstrap\".","line":2,"charStart":51,"charEnd":92}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":203,"charEnd":209}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "web/bootstrap.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1400 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"web/bootstrap.html\" in package \"PolymerBootstrap\".","line":2,"charStart":51,"charEnd":92}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "web/bootstrap.html" in package "PolymerBootstrap".}
+build.dart finished [1746 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"web/bootstrap.html\" in package \"PolymerBootstrap\".","line":2,"charStart":51,"charEnd":92}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"warning","params":{"file":"web/polymerbootstrap.html","message":"Move HTML imports above your Dart script tag.","line":7,"charStart":224,"charEnd":268}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "web/bootstrap.html" in package "PolymerBootstrap".}
+build.dart finished [1331 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"web/bootstrap.html\" in package \"PolymerBootstrap\".","line":2,"charStart":51,"charEnd":92}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "web/bootstrap.html" in package "PolymerBootstrap".}
+build.dart finished [1361 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":211,"charEnd":217}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1603 ms]
+
+---
+build.dart --machine --changed=web\bootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":211,"charEnd":217}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1374 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"Move HTML imports above your Dart script tag.","line":3,"charStart":126,"charEnd":167}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":21,"charStart":696,"charEnd":704}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":211,"charEnd":217}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1414 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+[{"method":"error","params":{"file":"web/polymerbootstrap.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":8,"charStart":211,"charEnd":217}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap"., Transform polymer (Linter) on PolymerBootstrap|web/polymerbootstrap.html threw error: To run a polymer application, you need to call "initPolymer". You can either include a generic script tag that does this for you:'<script type="application/dart">export "package:polymer/init.dart";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.}
+build.dart finished [1386 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+[{"method":"error","params":{"file":"web/bs-accordion.html","message":"couldn't find imported asset \"polymer/polymer.html\" in package \"PolymerBootstrap\".","line":1,"charStart":0,"charEnd":50}}]
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":20,"charStart":621,"charEnd":629}}]
+build failed with errors: {Transform polymer (Linter) on PolymerBootstrap|web/bs-accordion.html threw error: couldn't find imported asset "polymer/polymer.html" in package "PolymerBootstrap".}
+build.dart finished [1543 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+[{"method":"warning","params":{"file":"web/bs-accordion.html","message":"script tag in polymer element with no type will be treated as JavaScript. Did you forget type=\"application/dart\"?","line":19,"charStart":570,"charEnd":578}}]
+build.dart finished [1363 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1375 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1380 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1457 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1374 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1654 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1369 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1458 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1364 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1354 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1343 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1426 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1472 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1353 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1399 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1487 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [2149 ms]
+
+---
+build.dart --machine --changed=web\clickcounter.dart
+
+build.dart finished [1410 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart --removed=web\clickcounter.dart
+
+build.dart finished [1570 ms]
+
+---
+build.dart --machine --removed=web\clickcounter.html
+
+build.dart finished [1444 ms]
+
+---
+build.dart --machine --changed=build\bootstrap\css\bootstrap-responsive.css --changed=build\bootstrap\css\boots...
+
+build.dart finished [1557 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1693 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+
+build.dart finished [1400 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+
+build.dart finished [1537 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1499 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1574 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1484 ms]
+
+---
+build.dart --machine --changed=web\polymerbootstrap.html
+
+build.dart finished [1426 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1598 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [2173 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1449 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1709 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1583 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1493 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1390 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1443 ms]
+
+---
+build.dart --machine --removed=web\polymerbootstrap.css
+
+build.dart finished [1502 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1584 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1508 ms]
+
+---
+build.dart --machine --removed=build\bootstrap\css\bootstrap-responsive.css --removed=build\bootstrap\css\boots...
+
+build.dart finished [2623 ms]
+
+---
+build.dart --machine --changed=build\bootstrap\css\bootstrap-responsive.css --changed=build\bootstrap\css\boots...
+
+build.dart finished [3535 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1820 ms]
+
+---
+build.dart --machine --changed=build\bootstrap\css\bootstrap-responsive.css --changed=build\bootstrap\css\boots...
+
+build.dart finished [1563 ms]
+
+---
+build.dart --machine --changed=web\bs-accordion.html
+
+build.dart finished [1545 ms]
+
+---
+build.dart --machine --changed=build\bootstrap\css\bootstrap-responsive.css --changed=build\bootstrap\css\boots...
+
+build.dart finished [1649 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [4888 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1629 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1438 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1356 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1345 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1654 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1388 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1604 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1628 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1415 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1400 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1424 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1602 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1429 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [5659 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1768 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1450 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1464 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1461 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1445 ms]
+
+---
+build.dart --machine --changed=web\bs-accordian.dart
+
+build.dart finished [1410 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [1896 ms]
+
+---
+build.dart --machine --full
+
+build.dart finished [1220 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+
+build.dart finished [3984 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [1340 ms]
+
+---
+build.dart --machine --changed=pub.log
+
+build.dart finished [1120 ms]
+
+---
+build.dart --machine --changed=pub.zip
+
+build.dart finished [1452 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [1220 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Unable to open file: C:\Users\Mark Hatsell\dart\PolymerBootstrap\packages\polymer\builder.dart'file:///C:/Users/Mark Hatsell/dart/PolymerBootstrap/build.dart': error: line 1 pos 1: library handler failed
+import 'package:polymer/builder.dart';
+^
+build.dart finished [90 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Unable to open file: C:\Users\Mark Hatsell\dart\PolymerBootstrap\packages\polymer\builder.dart'file:///C:/Users/Mark Hatsell/dart/PolymerBootstrap/build.dart': error: line 1 pos 1: library handler failed
+import 'package:polymer/builder.dart';
+^
+build.dart finished [80 ms]
+

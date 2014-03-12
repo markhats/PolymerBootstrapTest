@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<link href="packages/widget/components/modal_popover.html" rel="import">
+
+<polymer-element name="modal-host-element">
+    <template>
+        <modal-popover-widget>
+            <input type="text" placeholder="Name1">
+            <content></content>
+            <input type="text" placeholder="Name3">
+        </modal-popover-widget>
+    </template>
+
+    <script type="application/dart" src="hostedmodal.dart"></script>
+</polymer-element>

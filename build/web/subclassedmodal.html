@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<link href="packages/widget/components/modal_popover.html" rel="import">
+
+<polymer-element name="modal-subclassed-element" extends="modal-popover-widget">
+    <template>
+        <shadow>
+            <input type="text" placeholder="Name1">
+            <content></content>
+            <input type="text" placeholder="Name3">
+        </shadow>
+    </template>
+
+    <script type="application/dart" src="subclassedmodal.dart"></script>
+</polymer-element>
